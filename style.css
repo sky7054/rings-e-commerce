@@ -207,7 +207,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/Category-Banner-Rings.jpg");
+    background-image: url("img/banner/Category-Banner-Rings.jpg");
     width: 100%;
     height: 30vh;
     background-size: cover;
@@ -318,8 +318,101 @@ footer .copyright{
     
 }
 
+/* Shop Page */
+
+#page-header{
+    background-image: url(img/banner/shop-banner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display:flex ;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#pagination a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single Page */
+#productDetails{
+    display:flex;
+    margin-top: 20px;
+}
+#productDetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col {
+    flex-basis:24%;
+    cursor: pointer;
+
+}
+#productDetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+#productDetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#productDetails .single-pro-details h2{
+    font: size 26px;
+}
+
+#productDetails .single-pro-details p{
+    padding: 5px 0 20px 0;
+    color: #818ea0;
+}
+
+
+#productDetails .single-pro-details select {
+    display:block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#productDetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;   
+}
+#productDetails .single-pro-details input:focus{
+    outline: none;
+}
+
+
+#productDetails .single-pro-details button{
+    width: 100px;
+    height:47px;
+    color:#fff;
+    border: none;
+    border-radius:5px;
+    background-color:#088178;
+}
+
+
 
 /*Start Media Query */
+
 @media (max-width:799px){
     .section-p1{
         padding: 40px 40px;
@@ -430,7 +523,32 @@ footer .copyright{
         text-align: start;
     }
 
+    /* Single Product */
+
+    #productDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #productDetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #productDetails .single-pro-details{
+        width: 100%;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
